@@ -1,0 +1,75 @@
+.content {
+  position: relative;
+  height: 480px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content svg {
+  position: absolute;
+  left: 0;
+  height: 480px;
+  z-index: -1;
+}
+.content svg path {
+  stroke: #2EA8E6;
+}
+.content img {
+  height: 475px;
+  width: 319px;
+  border-radius: 15px;
+  top: 4.5px;
+  left: 1px;
+  position: absolute;
+  z-index: -1;
+}
+.content .text {
+  position: relative;
+  margin-top: 21px;
+}
+.content .text h4 {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+}
+.content .text h2 {
+  font-size: 48px;
+  font-weight: 800;
+}
+.content .text h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.content .text p {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+.content .text p span {
+  font-weight: 800;
+}
+.content .size {
+  color: white;
+  border-radius: 100%;
+  background-color: #2EA8E6;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: end;
+  margin: 16px;
+}
+.content .size h2 {
+  font-size: 42px;
+}
+.content .size span {
+  margin-top: -10px;
+  font-size: 21px;
+}
+
+/*# sourceMappingURL=Card.module.css.map */

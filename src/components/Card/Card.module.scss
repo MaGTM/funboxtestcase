@@ -1,0 +1,74 @@
+.content {
+  position: relative;
+  height: 480px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  svg {
+    position: absolute;
+    left: 0;
+    height: 480px;
+    path {
+      stroke: #2EA8E6;
+    }
+    z-index: -1;
+  }
+  img {
+    height: 475px;
+    width: 319px;
+    border-radius: 15px;
+    top: 4.5px;
+    left: 1px;
+    position: absolute;
+    z-index: -1;
+  }
+  .text {
+    position: relative;
+    margin-top: 21px;
+    h4 {
+      color: #666666;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 48px;
+      font-weight: 800;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #666666;
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+
+  .size {
+    color: white;
+    border-radius: 100%;
+    background-color: #2EA8E6;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: end;
+    margin: 16px;
+    h2 {
+      font-size: 42px;
+    }
+    span {
+      margin-top: -10px;
+      font-size: 21px;
+    }
+  }
+}

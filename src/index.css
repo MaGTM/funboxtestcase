@@ -1,5 +1,20 @@
+@font-face {
+  src: url("./assets/fonts/Exo2.0-Thin.otf");
+}
+@font-face {
+  src: url("./assets/fonts/trebuchetms.ttf");
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+@font-face {
+  src: url("./assets/fonts/TrebuchetMS-Bold.ttf");
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 800;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
 }
