@@ -39,7 +39,7 @@ const Card: FC<CardProps> = ({product}) => {
                         })}
                     </div>
                 </div>
-                <div className={s.size}>
+                <div className={s.size} style={{backgroundColor: isSelected ? '#D91667': ''}}>
                     <h2>{product.size}</h2>
                     <span>кг</span>
                 </div>
