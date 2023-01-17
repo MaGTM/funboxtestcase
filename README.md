@@ -4,4 +4,8 @@
 ## Ссылка
 
 ## Start project
+``git clone https://github.com/MaGTM/funboxtestcase.git``
+
+``npm install``
+
 ``npm run start``
