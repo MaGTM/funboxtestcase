@@ -14,16 +14,16 @@
   justify-content: space-between;
   cursor: pointer;
 }
-.content .card svg {
+.content .card .border {
   position: absolute;
   left: 0;
   height: 480px;
-  z-index: -1;
+  z-index: 100;
 }
-.content .card svg path {
+.content .card .border path {
   stroke: #2EA8E6;
 }
-.content .card svg.active path {
+.content .card .border.active path {
   stroke: #D91667;
 }
 .content .card img {
@@ -52,13 +52,15 @@
   font-size: 24px;
   font-weight: 800;
 }
-.content .card .text p {
+.content .card .text .gift {
   margin-top: 15px;
   font-size: 14px;
   font-weight: 400;
   color: #666666;
+  max-width: 127px;
+  word-break: break-word;
 }
-.content .card .text p span {
+.content .card .text .gift span {
   font-weight: 800;
 }
 .content .card .size {
@@ -81,6 +83,12 @@
   margin-top: -10px;
   font-size: 21px;
 }
+.content .card .lightBack {
+  position: absolute;
+  width: 315px;
+  height: 480px;
+  display: none;
+}
 .content .additionalInfo {
   color: white;
   font-size: 13px;
@@ -90,6 +98,25 @@
   font-weight: 800;
   color: #2EA8E6;
   border-bottom: 2px dashed #2EA8E6;
+  cursor: pointer;
+}
+.content.disabled {
+  user-select: none;
+}
+.content.disabled .card {
+  cursor: default;
+}
+.content.disabled .card .border path {
+  stroke: #B3B3B3;
+}
+.content.disabled .card .size {
+  background-color: #B3B3B3;
+}
+.content.disabled .card .lightBack {
+  display: block;
+}
+.content.disabled .additionalInfo {
+  color: #FFFF66;
 }
 
 /*# sourceMappingURL=Card.module.css.map */
