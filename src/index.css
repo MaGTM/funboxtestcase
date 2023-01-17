@@ -1,6 +1,10 @@
 @font-face {
-  src: url("./assets/fonts/Exo2.0-Thin.otf");
+  font-family: "Exo2Thin";
+  src: url("./assets/fonts/exo2_0_extralight.otf");
+  font-style: normal;
+  font-weight: 100;
 }
+
 @font-face {
   src: url("./assets/fonts/trebuchetms.ttf");
   font-family: "Trebuchet MS", sans-serif;

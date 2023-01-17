@@ -1,4 +1,10 @@
 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.content .card {
   position: relative;
   height: 480px;
   width: 320px;
@@ -6,52 +12,56 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
-.content svg {
+.content .card svg {
   position: absolute;
   left: 0;
   height: 480px;
   z-index: -1;
 }
-.content svg path {
+.content .card svg path {
   stroke: #2EA8E6;
 }
-.content img {
+.content .card svg.active path {
+  stroke: #D91667;
+}
+.content .card img {
   height: 475px;
   width: 319px;
-  border-radius: 15px;
-  top: 4.5px;
+  border-radius: 12px;
+  top: 4px;
   left: 1px;
   position: absolute;
   z-index: -1;
 }
-.content .text {
+.content .card .text {
   position: relative;
   margin-top: 21px;
 }
-.content .text h4 {
+.content .card .text h4 {
   color: #666666;
   font-size: 16px;
   font-weight: 400;
 }
-.content .text h2 {
+.content .card .text h2 {
   font-size: 48px;
   font-weight: 800;
 }
-.content .text h3 {
+.content .card .text h3 {
   font-size: 24px;
   font-weight: 800;
 }
-.content .text p {
+.content .card .text p {
   margin-top: 15px;
   font-size: 14px;
   font-weight: 400;
   color: #666666;
 }
-.content .text p span {
+.content .card .text p span {
   font-weight: 800;
 }
-.content .size {
+.content .card .size {
   color: white;
   border-radius: 100%;
   background-color: #2EA8E6;
@@ -64,12 +74,22 @@
   align-self: end;
   margin: 16px;
 }
-.content .size h2 {
+.content .card .size h2 {
   font-size: 42px;
 }
-.content .size span {
+.content .card .size span {
   margin-top: -10px;
   font-size: 21px;
+}
+.content .additionalInfo {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+.content .additionalInfo span {
+  font-weight: 800;
+  color: #2EA8E6;
+  border-bottom: 2px dashed #2EA8E6;
 }
 
 /*# sourceMappingURL=Card.module.css.map */
