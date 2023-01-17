@@ -9,19 +9,36 @@ h1 {
     font-family: 'Exo2Thin', sans-serif;
     font-weight: 100;
     color: white;
+    text-align: center;
 }
 
 .App {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 100vh;
     height: 100vh;
     justify-content: center;
     gap: 24px;
 }
 
-.App > .Cards {
+.Cards {
     display: flex;
     gap: 80px;
+}
+
+@media screen and (max-width: 960px) {
+    .App {
+        justify-content: normal;
+        padding: 40px 0;
+        height: 100%;
+    }
+    .Cards {
+        max-width: 720px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Cards:last-child {
+        justify-self: center;
+    }
 }
