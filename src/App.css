@@ -24,21 +24,15 @@ h1 {
 .Cards {
     display: flex;
     gap: 80px;
+    max-width: 1130px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1131px) {
     .App {
         justify-content: normal;
         padding: 40px 0;
         height: 100%;
-    }
-    .Cards {
-        max-width: 720px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .Cards:last-child {
-        justify-self: center;
     }
 }
